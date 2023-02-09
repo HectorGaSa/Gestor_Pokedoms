@@ -10,11 +10,7 @@ package com.mycompany.gestorpokedom;
  * @author usuari
  */
 public class PokedomDB {
-    Pokedom[] llista;
-    
-    public PokedomDB(Pokedom[] llista) {
-        this.llista = llista;
-    }
+    Pokedom[] llista = new Pokedom[100];
     
     // función que a partir del nombre devuelve un Pokedom
     // Si no existe devuelve null!!!!!!!!!!!!!!
@@ -26,5 +22,7 @@ public class PokedomDB {
         }
         return null;
     }
-    
+    public Pokedom addPokedom(pokedom) {
+        
+    }
 }
