@@ -10,19 +10,21 @@ package com.mycompany.gestorpokedom;
  * @author usuari
  */
 public class PokedomDB {
-    Pokedom[] llista = new Pokedom[100];
+    private Pokedom listaPokedoms[] = new listaPokedoms[100];
+    private int i = 0;
     
     // función que a partir del nombre devuelve un Pokedom
     // Si no existe devuelve null!!!!!!!!!!!!!!
     public Pokedom describe(String nom) {
-        for (int i = 0; i < llista.length; i++) {
-            if (nom.equalsIgnoreCase(llista[i].getNom())) {
-                return llista[i];
+        for (int i = 0; i < listaPokedoms.length; i++) {
+            if (nom.equalsIgnoreCase(listaPokedoms[i].getNom())) {
+                return listaPokedoms[i];
             }
         }
         return null;
     }
-    public Pokedom addPokedom(pokedom) {
-        
+    public void insert (Pokedom unPokedom) {
+        listaPokedoms[i++] = unPokedom;
     }
+    
 }
